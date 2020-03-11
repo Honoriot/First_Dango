@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- <form method="POST"> {% csrf_token %}
+    {{ form_obj1.as_p }}
+    <input type = "submit" value="Save" /> 
+</form> -->
+
+<form action="." method="POST">{% csrf_token %}
+    <p>Enter name:</p>
+    <input type="text" name="Name" placeholder="Enter name" />
+    <p>Enter age:</p>
+    <input type="number" name="Age" placeholder="00" />
+    <p>Enter address:</p>
+    <input type="text" name="Address" placeholder="Place" size="40" />
+    <input type="submit" value="Save" />
+</form>
+{% endblock %}

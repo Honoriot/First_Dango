@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>About me</title>
+    </head>
+    <body>
+        {% extends "base.html" %}
+        {% block content %}
+            <h1>About me</h1>
+        
+        
+        <p>
+            {{ developer }}, {{ Contact_No }}, {{ Email }}
+
+        </p>
+
+        <ul>
+            {% for coures in my_coures %}
+                <li>{{ forloop.counter }}-{{ coures }}</li>
+            {% endfor %}
+        </ul>
+        {% endblock content %}
+    </body>
+</html>
