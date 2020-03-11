@@ -1,1 +1,1 @@
-web: gunicorn FirstDango.wsgi --log-file
+web: gunicorn FirstDango.wsgi --log-file -
